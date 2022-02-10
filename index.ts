@@ -1,3 +1,3 @@
-export function f() {
-    return 40;
+export function f(x: number) {
+    return false;
 }

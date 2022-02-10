@@ -1,7 +1,8 @@
-import {f} from '.'
+import { f } from ".";
 
 describe('Name of the group', () => {
     it('should ', () => {
-        expect(f()).toBe(40);
+        expect(f(-1)).toBe(false);
+        expect(f(0.5)).toBe(true);
     });
 });

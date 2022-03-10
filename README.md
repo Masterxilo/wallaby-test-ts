@@ -26,12 +26,5 @@ npm run test-js
 ```bash
 npm run mutation-test
 ```
-Uses Stryker
 
-# TODO
-
-Stryker 5.6
-
-    "checkers": ["typescript"],
-
-does not work in stryker; @stryker-mutator/typescript is dead, how exactly can we mutate ts directly now? or does it always mutate js now?
+Uses Stryker.

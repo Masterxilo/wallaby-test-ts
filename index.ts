@@ -1,3 +1,3 @@
-export function f(x: number) {
-    return false;
-}
+import { main } from "./lib";
+
+main()

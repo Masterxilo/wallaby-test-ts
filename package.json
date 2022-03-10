@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "ts-node ."
+    "test-js": "jest --config=./jest.js-config.js",
+    "mutation-test": "stryker run",
+    "start": "ts-node .",
+    "tsc": "tsc",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@stryker-mutator/core": "^5.6.1",
+    "@stryker-mutator/jest-runner": "^5.6.1",
+    "@stryker-mutator/typescript-checker": "^5.6.1",
     "@types/jest": "^27.4.0",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",

@@ -1,0 +1,26 @@
+{
+    "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+    "packageManager": "npm",
+    "reporters": [
+      "html",
+      "clear-text",
+      "progress"
+    ],
+    "testRunner": "jest",
+    "coverageAnalysis": "perTest",
+    "tsconfigFile": "./tsconfig.json",
+    "buildCommand": "npm run build",
+    "cleanTempDir": false,
+    "disableTypeChecks": "./**/*.{js,ts,jsx,tsx,html,vue}",
+    "mutate": [
+      "./**/*.ts",
+      "!./**/*.spec.ts",
+      "!./out/**",
+      "!./coverage/**"
+    ],
+    "logLevel": "info",
+    "thresholds": {
+      "break": 100
+    }
+  }
+  

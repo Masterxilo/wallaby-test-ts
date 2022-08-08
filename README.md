@@ -13,7 +13,9 @@ npm start
 ```bash
 npm test
 ```
-Uses jest. Tests can also be run by wallaby.js VsCode plugin, the automatic configuration should work.
+Uses jest.
+
+Tests can also be run by Wallaby.js VsCode & IntelliJ plugin, the automatic configuration should work.
 
 You can also build it and run the .js version of the tests:
 
@@ -27,4 +29,15 @@ npm run test-js
 npm run mutation-test
 ```
 
-Uses Stryker.
+Uses [Stryker Mutator](https://stryker-mutator.io/).
+[List of Mutators](https://stryker-mutator.io/docs/mutation-testing-elements/supported-mutators/#supported-mutators).
+
+# Dependencies
+Tested with
+* node 14 & 15
+* Windows 10, cmd & powershell
+* Windows 10, WSL, Ubuntu 20.04
+* Ubuntu 18.04
+
+* Visual Studio Code
+* IntelliJ IDEA Ultimate 2021

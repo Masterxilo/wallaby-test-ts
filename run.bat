@@ -2,17 +2,17 @@
 setlocal
 setlocal EnableDelayedExpansion
 
-npm install
-if %ERRORLEVEL% <> 0 ( exit %ERRORLEVEL% )
+call npm install
+if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
 
-npm run build
-if %ERRORLEVEL% <> 0 ( exit %ERRORLEVEL% )
+call npm run build
+if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
 
-npm run test
-if %ERRORLEVEL% <> 0 ( exit %ERRORLEVEL% )
+call npm run test
+if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
 
-npm run mutation-test
-if %ERRORLEVEL% <> 0 ( exit %ERRORLEVEL% )
+call npm run mutation-test
+if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
 
-npm run start
-if %ERRORLEVEL% <> 0 ( exit %ERRORLEVEL% )
+call npm run start
+if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )

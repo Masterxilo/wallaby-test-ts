@@ -1,8 +1,10 @@
-import { f } from "./lib";
+import { isSingleDigit } from "./lib";
 
-describe('Name of the group', () => {
-    it('should ', () => {
-        expect(f(-1)).toBe(false);
-        //expect(f(0.5)).toBe(true);
+describe('isSingleDigit', () => {
+    it('should classify correctly', function () {
+        expect(isSingleDigit(-1)).toBe(false);
+        expect(isSingleDigit(0)).toBe(true);
+        expect(isSingleDigit(9)).toBe(true);
+        expect(isSingleDigit(12)).toBe(false);
     });
 });

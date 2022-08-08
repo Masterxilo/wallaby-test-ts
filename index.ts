@@ -1,8 +1,8 @@
-import { f } from "./src/lib";
+import { isSingleDigit } from "./src/lib";
 
 export function main() {
-    console.log("Hello, world!")
-    f(0.5);
+    console.log("Hello, world!");
+    isSingleDigit(0);
 }
 
 main()

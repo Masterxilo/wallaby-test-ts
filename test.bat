@@ -2,6 +2,5 @@
 setlocal
 setlocal EnableDelayedExpansion
 
-del /S /Q .stryker-tmp
-call npm run mutation-test
+call npm run test
 if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )

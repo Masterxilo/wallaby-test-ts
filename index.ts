@@ -1,8 +1,8 @@
-import { isSingleDigit } from "./src/lib";
+import { isSingleDigitExcept5 } from "./src/lib";
 
 export function main() {
     console.log("Hello, world!");
-    isSingleDigit(0);
+    isSingleDigitExcept5(0);
 }
 
 main()

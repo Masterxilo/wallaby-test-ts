@@ -1,5 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
+# note: if performance of your Linux computer is bad
+# you might get a lot of mutants killed by timeout!
+#
+# in this example, not a single test should fail because of timeout!
+
 rm -rf .stryker-tmp
 npm run mutation-test

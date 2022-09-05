@@ -52,3 +52,11 @@ expect(isSingleDigitExcept5(5)).toBe(false);
 expect(isSingleDigitExcept5(-1)).toBe(false);
 expect(isSingleDigitExcept5(9)).toBe(true);
 ```
+
+# Known issues
+It seems that with node 18, many mutations just *time out* and the tests take very long to run?!
+Use node 16 and or ignore timeouts...
+
+It looks like this might also be due to general Windows 11 and WSL slowness.
+
+Prefer the native version and expect no tests to fail because of timeout with no mutant.

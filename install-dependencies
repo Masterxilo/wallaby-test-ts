@@ -1,0 +1,27 @@
+#!/bin/bash
+set -euo pipefail
+
+# stryker 5 & 6 seem to give way too many timeouts with all mutants
+# stryker 4 needs jest@26, otherwise gives
+# > undefinedClass extends value #<Object> is not a constructor or null TypeError: Class extends value #<Object> is not a constructor or null  at Object.mixinJestEnvironment (/mnt/c/Users/pau/wallaby-test-ts/node_modules/@stryker-mutator/jest-runner/dist/src/jest-plugins/mixin-jest-environment.js:19:42)
+# ts-jest is only available until 28
+npm install --save-dev \
+    @stryker-mutator/core@4 \
+    @stryker-mutator/jest-runner@4 \
+    @stryker-mutator/typescript-checker@4 \
+    @types/jest@26 \
+    jest@26 \
+    jest-cli@26 \
+    ts-jest@26 \
+    ts-node
+
+# or
+npm install --save-dev \
+    @stryker-mutator/core@6 \
+    @stryker-mutator/jest-runner@6 \
+    @stryker-mutator/typescript-checker@6 \
+    @types/jest@28 \
+    jest@28 \
+    jest-cli@28 \
+    ts-jest@28 \
+    ts-node

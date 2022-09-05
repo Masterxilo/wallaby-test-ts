@@ -9,7 +9,7 @@ Remove-Item -Force -Recurse .stryker-tmp -ErrorAction SilentlyContinue
 function check() {
     &$args[0] @($args[1..($args.length-1)])
     if ($LASTEXITCODE -ne 0) {
-        throw "$args failed with exit code: $LASTEXITCODE"
+        throw "'$args' failed with exit code: $LASTEXITCODE"
     }
 }
 

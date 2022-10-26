@@ -6,5 +6,7 @@ set -euo pipefail
 #
 # in this example, not a single test should fail because of timeout!
 
+# remove .stryker-tmp - just so that we have an easier time showing exactly the code of the last run
 rm -rf .stryker-tmp
+
 npm run mutation-test

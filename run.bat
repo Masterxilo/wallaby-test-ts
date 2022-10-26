@@ -2,17 +2,7 @@
 setlocal
 setlocal EnableDelayedExpansion
 
-call npm install
-if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
 
-call npm run build
-if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
-
-call npm run test
-if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
-
-call npm run mutation-test
-if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
-
-call npm run start
-if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
+REM call npm install
+REM if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
+powershell.exe run.ps1

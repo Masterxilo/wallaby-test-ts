@@ -2,5 +2,7 @@
 setlocal
 setlocal EnableDelayedExpansion
 
-call npm run test
-if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
+REM call npm run test
+REM if %ERRORLEVEL% NEQ 0 ( exit /B %ERRORLEVEL% )
+
+powershell.exe test.ps1

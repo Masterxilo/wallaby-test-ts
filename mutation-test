@@ -10,5 +10,6 @@ set -euo pipefail
 
 # remove .stryker-tmp - just so that we have an easier time showing exactly the code of the last run
 rm -rf .stryker-tmp
+rm -rf reports
 
 npm run mutation-test

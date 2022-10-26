@@ -1,6 +1,8 @@
 $ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
 
+.\npm-install-if-necessary.ps1
+
 try {
     Get-Command npm 
 } catch {

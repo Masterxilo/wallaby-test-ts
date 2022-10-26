@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+./npm-install-if-necessary
+
 # note: if performance of your Linux computer is bad
 # you might get a lot of mutants killed by timeout!
 #

@@ -15,7 +15,8 @@ npm install --save-dev \
     ts-jest@26 \
     ts-node
 
-# or
+if false ; then
+# or, giving more timeouts/worse results:
 npm install --save-dev \
     @stryker-mutator/core@6 \
     @stryker-mutator/jest-runner@6 \
@@ -25,3 +26,6 @@ npm install --save-dev \
     jest-cli@28 \
     ts-jest@28 \
     ts-node
+fi
+
+./npm-install-if-necessary

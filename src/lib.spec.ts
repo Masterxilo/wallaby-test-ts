@@ -6,5 +6,7 @@ describe('isSingleDigit', () => {
         expect(isSingleDigitExcept5(0)).toBe(true);
         expect(isSingleDigitExcept5(10)).toBe(false);
         expect(isSingleDigitExcept5(5)).toBe(false);
+        
+        expect(isSingleDigitExcept5(-1)).toBe(false);
     });
 });
